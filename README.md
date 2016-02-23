@@ -13,4 +13,5 @@ L'application sera donc disponible pour les inscrits et leur permettra de s'info
 
 ##TODO List
 
-- Maquette wireframe de l'application
+~~- Maquette wireframe de l'application~~
+- Design de l'application (via Sketch)
