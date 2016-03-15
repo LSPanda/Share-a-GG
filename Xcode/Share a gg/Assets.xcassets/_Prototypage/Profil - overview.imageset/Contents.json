@@ -2,17 +2,15 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "current-2.pdf",
+      "filename" : "Profil - overview.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "current-1.pdf",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "current.pdf",
       "scale" : "3x"
     }
   ],
