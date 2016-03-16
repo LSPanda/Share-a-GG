@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -18,35 +18,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="jyx-DS-2Qi">
-                                <rect key="frame" x="75" y="41" width="170" height="170"/>
+                                <rect key="frame" x="75" y="38" width="170" height="170"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="urn-H5-LMO">
-                                <rect key="frame" x="23" y="274" width="275" height="100"/>
+                                <rect key="frame" x="23" y="272" width="275" height="100"/>
                                 <string key="text">Partager vos parties sur League of Legend avec vos amis et découvrez contre qui vous allez combattre dans les Champs de Justice.</string>
                                 <color key="textColor" red="0.34901960784313724" green="0.34901960784313724" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Bienvenue sur Share a GG" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GU6-Hy-khC">
-                                <rect key="frame" x="60" y="227" width="200" height="35"/>
+                                <rect key="frame" x="60" y="222" width="200" height="35"/>
                                 <color key="textColor" red="0.34901960780000002" green="0.34901960780000002" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGK-Mz-2xS">
-                                <rect key="frame" x="70" y="396" width="180" height="45"/>
+                                <rect key="frame" x="70" y="393" width="180" height="45"/>
                                 <color key="backgroundColor" red="0.1450980392" green="0.63529411759999999" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Inscription">
                                     <color key="titleColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="bZ1-ic-qTo" kind="modal" id="Mse-Pp-XBS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zef-P5-M8r">
-                                <rect key="frame" x="70" y="458" width="180" height="45"/>
+                                <rect key="frame" x="70" y="454" width="180" height="45"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="Connexion">
                                     <color key="titleColor" red="0.1450980392" green="0.63529411759999999" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="toH-SR-e2c" kind="modal" id="hqS-Cf-VL9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -55,125 +61,131 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="819" y="757"/>
+            <point key="canvasLocation" x="819" y="818"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="rn7-Yg-9x4">
+        <scene sceneID="sBC-iy-vE9">
             <objects>
-                <viewController id="fQL-tK-BdF" customClass="ViewController" customModule="Share_a_gg" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bZ1-ic-qTo" customClass="ViewController" customModule="Share_a_gg" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="76g-ez-GBu"/>
-                        <viewControllerLayoutGuide type="bottom" id="aqj-YU-3HK"/>
+                        <viewControllerLayoutGuide type="top" id="xqM-7q-8pY"/>
+                        <viewControllerLayoutGuide type="bottom" id="FTE-5O-82w"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="IB7-vb-6Rc">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="BO3-CP-Cpl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Signin" translatesAutoresizingMaskIntoConstraints="NO" id="Dvp-zv-Bay">
-                                <rect key="frame" x="-160" y="-284" width="640" height="1136"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Signin" translatesAutoresizingMaskIntoConstraints="NO" id="Qv1-Xg-ifs">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nc2-lB-xFO">
-                                <rect key="frame" x="69" y="393" width="182" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNc-4T-70P">
+                                <rect key="frame" x="70" y="395" width="181" height="44"/>
                                 <connections>
-                                    <segue destination="6Jo-F5-9kd" kind="presentation" id="dqg-Ku-Jc6"/>
+                                    <segue destination="bpF-UC-r6r" kind="modal" id="mAN-71-cxB"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="rsZ-kU-efy"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="flJ-b4-qhs" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ooE-wN-3en" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="819.375" y="34.859154929577464"/>
+            <point key="canvasLocation" x="819" y="90"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="VWF-Ik-Jmk">
+        <scene sceneID="tze-6z-RJ8">
             <objects>
-                <viewController id="6Jo-F5-9kd" customClass="ViewController" customModule="Share_a_gg" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bpF-UC-r6r" customClass="ViewController" customModule="Share_a_gg" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="iOJ-5q-YJV"/>
-                        <viewControllerLayoutGuide type="bottom" id="Jub-Gq-0Db"/>
+                        <viewControllerLayoutGuide type="top" id="BTb-w0-jGt"/>
+                        <viewControllerLayoutGuide type="bottom" id="yHW-LX-99Q"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="rcy-oj-FDQ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="h3v-DB-aQM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Add summoner" translatesAutoresizingMaskIntoConstraints="NO" id="tGr-7O-Oi1">
-                                <rect key="frame" x="-160" y="-284" width="640" height="1136"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Add summoner" translatesAutoresizingMaskIntoConstraints="NO" id="tMm-ow-QGI">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o4u-R7-HUN">
-                                <rect key="frame" x="69" y="217" width="182" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnk-q0-oZj">
+                                <rect key="frame" x="70" y="215" width="181" height="44"/>
                                 <connections>
-                                    <segue destination="ffk-2V-zaP" kind="presentation" id="2od-mF-Ihf"/>
+                                    <segue destination="toH-SR-e2c" kind="modal" id="X5D-lM-1Jb"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lRf-aX-qV7" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FLy-op-mk6" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1576.875" y="34.859154929577464"/>
+            <point key="canvasLocation" x="1224" y="90"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="hoW-mc-c4z">
+        <scene sceneID="mnj-5m-gzc">
             <objects>
-                <viewController id="ffk-2V-zaP" customClass="ViewController" customModule="Share_a_gg" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="toH-SR-e2c" customClass="ViewController" customModule="Share_a_gg" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="zql-91-ao0"/>
-                        <viewControllerLayoutGuide type="bottom" id="5hw-aB-KSS"/>
+                        <viewControllerLayoutGuide type="top" id="VcB-AN-MdU"/>
+                        <viewControllerLayoutGuide type="bottom" id="hZN-uL-dtv"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="6Uk-00-fvX">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="goQ-8i-G4F">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Flux" translatesAutoresizingMaskIntoConstraints="NO" id="1kk-YM-389">
-                                <rect key="frame" x="-160" y="-284" width="640" height="1136"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Flux" translatesAutoresizingMaskIntoConstraints="NO" id="5Ug-Qo-J5m">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lka-OY-ro9">
-                                <rect key="frame" x="85" y="224" width="121" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nq-CC-Aiw">
+                                <rect key="frame" x="86" y="223" width="116" height="44"/>
                                 <connections>
-                                    <segue destination="FHF-jc-MEb" kind="presentation" id="nIJ-ee-7ln"/>
+                                    <segue destination="BRb-SJ-bwA" kind="modal" id="M0p-uA-4fz"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gkA-4Y-iGC" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jj1-f8-ebV" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1576.875" y="757.39436619718299"/>
+            <point key="canvasLocation" x="1224" y="818"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="1WW-s7-c4j">
+        <scene sceneID="Fym-Dd-UYE">
             <objects>
-                <viewController id="FHF-jc-MEb" customClass="ViewController" customModule="Share_a_gg" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BRb-SJ-bwA" customClass="ViewController" customModule="Share_a_gg" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="7eY-HV-VoV"/>
-                        <viewControllerLayoutGuide type="bottom" id="yqk-Hz-9AJ"/>
+                        <viewControllerLayoutGuide type="top" id="kxB-FZ-5aT"/>
+                        <viewControllerLayoutGuide type="bottom" id="ddo-G6-eq3"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="J6O-MD-C8d">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="nHA-0f-AuW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Profil - overview" translatesAutoresizingMaskIntoConstraints="NO" id="LuX-Wd-Ogp">
-                                <rect key="frame" x="-160" y="-339" width="640" height="1365"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Profil - overview" translatesAutoresizingMaskIntoConstraints="NO" id="wyQ-Aa-kvU">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="685"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tFv-rh-tyv" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VjQ-mz-yl5" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2319.375" y="757.39436619718299"/>
+            <point key="canvasLocation" x="1627" y="818"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Add summoner" width="320" height="568"/>
-        <image name="Flux" width="320" height="568"/>
-        <image name="Profil - overview" width="320" height="683"/>
-        <image name="Signin" width="320" height="568"/>
+        <image name="Add summoner" width="640" height="1136"/>
+        <image name="Flux" width="640" height="1136"/>
+        <image name="Profil - overview" width="640" height="1365"/>
+        <image name="Signin" width="640" height="1136"/>
         <image name="logo" width="400" height="400"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="hqS-Cf-VL9"/>
+    </inferredMetricsTieBreakers>
 </document>
