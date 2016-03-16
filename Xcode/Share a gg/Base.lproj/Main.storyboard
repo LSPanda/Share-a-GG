@@ -20,26 +20,31 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="jyx-DS-2Qi">
                                 <rect key="frame" x="75" y="38" width="170" height="170"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="urn-H5-LMO">
-                                <rect key="frame" x="23" y="272" width="275" height="100"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="urn-H5-LMO" customClass="DesignableTextView" customModule="Share_a_gg" customModuleProvider="target">
+                                <rect key="frame" x="23" y="272" width="275" height="93"/>
                                 <string key="text">Partager vos parties sur League of Legend avec vos amis et découvrez contre qui vous allez combattre dans les Champs de Justice.</string>
                                 <color key="textColor" red="0.34901960784313724" green="0.34901960784313724" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Bienvenue sur Share a GG" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GU6-Hy-khC">
-                                <rect key="frame" x="60" y="222" width="200" height="35"/>
+                                <rect key="frame" x="60" y="222" width="200" height="53"/>
                                 <color key="textColor" red="0.34901960780000002" green="0.34901960780000002" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGK-Mz-2xS">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGK-Mz-2xS" customClass="DesignableButton" customModule="Share_a_gg" customModuleProvider="target">
                                 <rect key="frame" x="70" y="393" width="180" height="45"/>
                                 <color key="backgroundColor" red="0.1450980392" green="0.63529411759999999" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Inscription">
                                     <color key="titleColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="bZ1-ic-qTo" kind="modal" id="Mse-Pp-XBS"/>
                                 </connections>
